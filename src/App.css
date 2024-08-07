@@ -1,0 +1,268 @@
+:root {
+  --background-color-start: #4b0082; /* Violet */
+  --background-color-end: #db5903; /* Orange */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(to right, var(--background-color-start), var(--background-color-end));
+  color: var(--text-color);
+}
+
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 50px;
+  background-color: #f7f8fc; /* Light background color */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 50px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  width: 75%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border: 2px solid #f0f0f0;
+  background-color: #f0f0f0; 
+  border-radius: 0px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+button {
+  background-color: #ff6600;
+  padding: 12px 20px;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-left: 0px;
+  color: white;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+button:hover {
+  background-color: #ff4500; /* Darker orange on hover */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  font-size: 18px;
+  padding: 15px;
+  border: 2px solid #f0f0f0;
+  border-radius: 10px;
+  color: #523758;
+  background-color: #f0f0f0; 
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgb(99, 32, 161);
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+  color: #4b0082; /* Purple color for the header */
+  font-family: Arial, sans-serif;
+}
+
+.task-info {
+  display: flex;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+
+.task-info div {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-time {
+  color: #888;
+  margin-left: 10px;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  text-align: left;
+}
+
+.task-deadline {
+  color: #888; /* Red color for deadline */
+  margin-left: 10px;
+  font-size: 12px; /* Smaller font size */
+  font-family: Arial, sans-serif;
+  text-align: left;
+}
+
+.task-actions {
+  display: flex;
+  gap: 0px;
+  font-family: Arial, sans-serif;
+}
+
+.task-actions button {
+  width: 60px; 
+  height: 60px; 
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  font-size: 25px;
+  color: white;
+  border-radius: 0;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  overflow: hidden; 
+}
+
+.task-actions button:first-child {
+  border: 1px solid #4b0082;
+  background-color: #4b0082; /* Violet */
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.task-actions button:first-child:hover {
+  background-color: #3d0077; /* Darker violet */
+}
+
+/* Edit button */
+.task-actions button:last-child {
+  border: 1px solid #ff6600;
+  background-color: #ff6600; /* Orange */
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.task-actions button:last-child:hover {
+  background-color: #ff4500; /* Darker orange */
+}
+
+.universal-task-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Clear All button */
+.universal-task-actions button:first-child {
+  background-color: #3d0077; 
+  border-radius: 10px 
+}
+
+.universal-task-actions button:first-child:hover {
+  background-color: #3d0077; 
+}
+
+.universal-task-actions button:last-child {
+  background-color: #4b0082; 
+  border-radius: 10px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.tabs button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.tabs button.active {
+  background-color: #4b0082;
+  color: white;
+}
+
+/* Placeholder text */
+.placeholder-text {
+  font-size: 18px;
+  color: #888;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  font-family: Arial, sans-serif;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  color: #686767;
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.modal-content button {
+  margin: 5px;
+}
+
+.modal input[type="datetime-local"] {
+  color: gray;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #4b0082; /* Violet */
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #4b0082; /* Violet */
+}
+
+input[type="checkbox"]:checked::before {
+  content: "✓";
+  display: block;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  line-height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
