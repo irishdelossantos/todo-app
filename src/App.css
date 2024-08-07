@@ -1,6 +1,6 @@
 :root {
-  --background-color-start: #4b0082; /* Violet */
-  --background-color-end: #db5903; /* Orange */
+  --background-color-start: #4b0082; 
+  --background-color-end: #db5903; 
 }
 
 body {
@@ -16,7 +16,7 @@ body {
   text-align: center;
   font-family: Arial, sans-serif;
   margin-top: 50px;
-  background-color: #f7f8fc; /* Light background color */
+  background-color: #f7f8fc; 
   padding: 20px;
   border-radius: 10px;
   max-width: 600px;
@@ -52,7 +52,7 @@ button {
 }
 
 button:hover {
-  background-color: #ff4500; /* Darker orange on hover */
+  background-color: #ff4500; 
 }
 
 ul {
@@ -78,7 +78,7 @@ li {
 
 h1 {
   font-size: 50px;
-  color: #4b0082; /* Purple color for the header */
+  color: #4b0082; 
   font-family: Arial, sans-serif;
 }
 
@@ -106,9 +106,9 @@ h1 {
 }
 
 .task-deadline {
-  color: #888; /* Red color for deadline */
+  color: #888; 
   margin-left: 10px;
-  font-size: 12px; /* Smaller font size */
+  font-size: 12px; 
   font-family: Arial, sans-serif;
   text-align: left;
 }
@@ -136,25 +136,24 @@ h1 {
 
 .task-actions button:first-child {
   border: 1px solid #4b0082;
-  background-color: #4b0082; /* Violet */
+  background-color: #4b0082; 
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
 
 .task-actions button:first-child:hover {
-  background-color: #3d0077; /* Darker violet */
+  background-color: #3d0077;
 }
 
-/* Edit button */
 .task-actions button:last-child {
   border: 1px solid #ff6600;
-  background-color: #ff6600; /* Orange */
+  background-color: #ff6600; 
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
 .task-actions button:last-child:hover {
-  background-color: #ff4500; /* Darker orange */
+  background-color: #ff4500; 
 }
 
 .universal-task-actions {
@@ -164,7 +163,7 @@ h1 {
   margin-top: 20px;
 }
 
-/* Clear All button */
+
 .universal-task-actions button:first-child {
   background-color: #3d0077; 
   border-radius: 10px 
@@ -200,7 +199,7 @@ h1 {
   color: white;
 }
 
-/* Placeholder text */
+
 .placeholder-text {
   font-size: 18px;
   color: #888;
@@ -241,7 +240,7 @@ input[type="checkbox"] {
   appearance: none;
   width: 20px;
   height: 20px;
-  border: 2px solid #4b0082; /* Violet */
+  border: 2px solid #4b0082; 
   border-radius: 3px;
   outline: none;
   cursor: pointer;
@@ -251,7 +250,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked {
-  background-color: #4b0082; /* Violet */
+  background-color: #4b0082; 
 }
 
 input[type="checkbox"]:checked::before {

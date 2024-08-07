@@ -41,12 +41,14 @@ function App() {
   };
 
   const updateTask = () => {
-    const updatedTaskList = [...taskList];
-    updatedTaskList[currentTaskIndex].task = taskName;
-    setTaskList(updatedTaskList);
-    setTaskName("");
-    setIsEditing(false);
-    setCurrentTaskIndex(null);
+    if (taskName.trim()) {
+      const updatedTaskList = [...taskList];
+      updatedTaskList[currentTaskIndex].task = taskName;
+      setTaskList(updatedTaskList);
+      setTaskName("");
+      setIsEditing(false);
+      setCurrentTaskIndex(null);
+    }
   };
 
   const toggleComplete = (index) => {
